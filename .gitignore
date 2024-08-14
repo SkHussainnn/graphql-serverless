@@ -1,0 +1,40 @@
+# Node.js dependencies
+node_modules/
+
+# Yarn lock file
+yarn.lock
+
+# Log files
+*.log
+
+# Build directories
+dist/
+build/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Environment variables
+.env
+
+# AWS SAM/serverless framework files
+.serverless/
+.aws-sam/
+
+# Docker files
+docker-compose.override.yml
+docker-compose.yml
+Dockerfile
+
+# Frontend build output
+frontend/build/
+
+# IDE/editor specific files
+.vscode/
+.idea/
+
+# MacOS system files
+.DS_Store
+
+# Temporary files
+tmp/
