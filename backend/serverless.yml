@@ -1,0 +1,24 @@
+service: graphql-serverless-backend
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  region: us-east-1
+
+functions:
+  graphql:
+    handler: src/index.handler
+    events:
+    - http:
+        path: graphql
+        method: post
+
+plugins:
+- serverless-webpack
+
+custom:
+  webpack:
+    webpackConfig: './webpack.config.js'
+    includeModules: true
